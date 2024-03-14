@@ -1,0 +1,14 @@
+<div>
+  <form (change)="sortByType(filter)">
+    <select [(ngModel)]="filter" name="filter">
+      <option value="All">All</option>
+      <option value="Vegetable">Vegetable</option>
+      <option value="Fruit">Fruit</option>
+    </select>
+  </form>
+</div>
+
+<div>
+  <Button (click)="sortByPrice()">Sort by Price</Button>
+  <Button (click)="sortByName()">Sort By Name</Button>
+</div>
